@@ -1,144 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- add required and recommended <meta> tags -->
+  <!-- ===== Required meta ===== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Limitless Fitness Gym | Personal Training & Classes</title>
+
+  <!-- ===== Standard SEO meta ===== -->
+  <meta name="author" content="Jinny Baek">
+  <meta name="description" content="Transform your life at Limitless Fitness. Expert personal training, group classes, and a supportive community to help you get stronger and stay consistent.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ybaek4.github.io/limitlessfitnessgym/">
+
+  <!-- ===== Open Graph (Facebook, LinkedIn etc.) ===== -->
+  <meta property="og:title" content="Limitless Fitness Gym">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Expert personal training & group classes. Join Limitless Fitness today.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1554284126-00a33872ed9b?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta property="og:url" content="https://ybaek4.github.io/limitlessfitnessgym/">
+
+  <!-- ===== Twitter Card (large image) ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ybaek4">
+  <meta name="twitter:creator" content="@ybaek4">
+  <meta name="twitter:title" content="Limitless Fitness Gym">
+  <meta name="twitter:description" content="Expert personal training & group classes. Join today.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1554284126-00a33872ed9b?auto=format&fit=crop&w=1200&h=630&q=80">
+
+  <!-- ===== Favicons (optional) ===== -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- ===== Minimal accessibility CSS ===== -->
+  <style>
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+    }
+    .skip-link:focus {
+      left: 16px;
+      top: 16px;
+      background: #000;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      z-index: 1000;
+    }
+    svg[aria-hidden="true"] {
+      outline: none;
+    }
+  </style>
 </head>
+
 <body>
-<!-- add a skip link that skips to the main content -->
-<!-- add correct heading levels -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
-      <path d="M2 12h1"></path>
-      <path d="M6 8h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2"></path>
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
+      <path d="M2 12h1"></path><path d="M6 8h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2"></path>
       <path d="M6 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1z"></path>
       <path d="M9 12h6"></path>
       <path d="M15 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1z"></path>
       <path d="M18 8h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2"></path>
       <path d="M22 12h-1"></path>
-    </svg> 
-    Transform Your Life at Limitless Fitness
-    <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
-    <a href="#">Join Now</a>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
-    
-      src="images/facility.jpg"
+    </svg>
 
+    <h1>Transform Your Life at Limitless Fitness</h1>
+    <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
+    <p><a href="#membership-form">Join Now</a></p>
+
+    <figure>
+      <picture>
+        <source srcset="images/facility-1200.jpg 1200w, images/facility-800.jpg 800w" sizes="(max-width: 600px) 100vw, 1200px">
+        <img src="images/facility.jpg" alt="Bright modern gym with weight racks and cardio machines.">
+      </picture>
+      <figcaption>Our facility inspires every workout.</figcaption>
+    </figure>
   </header>
-  <nav>
-    Main Navigation
+
+  <nav aria-label="Main Navigation">
     <ul>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Classes</a></li>
-      <li><a href="#">Personal Training</a></li>
-      <li><a href="#">Membership Options</a></li>
-      <li><a href="#">Testimonials</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#pt">Personal Training</a></li>
+      <li><a href="#membership">Membership Options</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <main>
-    <section>
-      About Us
+
+  <main id="main">
+    <section aria-labelledby="about">
+      <h2 id="about">About Us</h2>
       <p>Welcome to Limitless Fitness, where fitness meets community. Our state-of-the-art facility is designed to inspire and support you at every stage of your journey. Whether you're a beginner or a seasoned athlete, our expert trainers and diverse classes provide the perfect environment to achieve your personal best.</p>
-      <section>
-        What Sets Us Apart
+
+      <article aria-labelledby="what-sets">
+        <h3 id="what-sets">What Sets Us Apart</h3>
         <ul>
-          <li>Personalized Training: Customized workout plans tailored to your goals.</li>
-          <li>Top-of-the-Line Equipment: The latest gear to ensure effective and safe workouts.</li>
-          <li>Dynamic Classes: From high-intensity interval training (HIIT) to yoga and strength training.</li>
-          <li>Supportive Community: A motivating environment where every member is valued.</li>
+          <li><strong>Personalized Training:</strong> Custom plans tailored to your goals.</li>
+          <li><strong>Top Equipment:</strong> Latest gear for safe and effective workouts.</li>
+          <li><strong>Dynamic Classes:</strong> From HIIT to yoga and strength training.</li>
+          <li><strong>Supportive Community:</strong> A motivating, inclusive environment.</li>
         </ul>
-      </section>
+      </article>
     </section>
-    <section>
-      Our Classes
+
+    <section aria-labelledby="classes">
+      <h2 id="classes">Our Classes</h2>
       <p>Discover a wide variety of classes designed to challenge and energize you.</p>
       <ul>
-        <li>HIIT & Cardio: Boost your endurance and burn calories.</li>
-        <li>Strength & Conditioning: Build muscle and improve overall fitness.</li>
-        <li>Yoga & Pilates: Enhance flexibility and reduce stress.</li>
-        <li>Specialty Workshops: From functional training to mindfulness sessions.</li>
-        <li>Check out our [Class Schedule] for times and detailed descriptions.</li>
+        <li>HIIT &amp; Cardio: Boost endurance and burn calories.</li>
+        <li>Strength &amp; Conditioning: Build muscle and core stability.</li>
+        <li>Yoga &amp; Pilates: Enhance flexibility and reduce stress.</li>
+        <li>Workshops: From functional training to mindfulness sessions.</li>
       </ul>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
-        src="images/classes.jpg"
 
+      <figure>
+        <picture>
+          <source srcset="images/classes-1200.jpg 1200w, images/classes-800.jpg 800w" sizes="(max-width: 600px) 100vw, 1200px">
+          <img src="images/classes.jpg" alt="Instructor leading a group fitness class in bright studio.">
+        </picture>
+        <figcaption>Find your class and stay consistent.</figcaption>
+      </figure>
     </section>
-    <section>
-      Personal Training
-      <p>
-        Take your fitness to the next level with our one-on-one training sessions. Our certified trainers work with you to create a customized plan that fits your lifestyle and targets your specific goals.
-        Ready for a change?
-      </p> 
-      <a href="#">Book a Free Consultation today!</a>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
-        src="images/dumbells.jpg"
 
+    <section aria-labelledby="pt">
+      <h2 id="pt">Personal Training</h2>
+      <p>Take your fitness to the next level with one-on-one sessions. Our certified trainers design a plan that fits your lifestyle and goals.</p>
+      <p><a href="#membership-form">Book a Free Consultation today!</a></p>
+
+      <figure>
+        <picture>
+          <source srcset="images/dumbells-1200.jpg 1200w, images/dumbells-800.jpg 800w" sizes="(max-width: 600px) 100vw, 1200px">
+          <img src="images/dumbells.jpg" alt="Trainer coaching client during dumbbell workout.">
+        </picture>
+        <figcaption>Guided sessions for real progress.</figcaption>
+      </figure>
     </section>
-    <section>
-      Membership Options
-      <p>At Limitless Fitness, we offer flexible membership plans to suit your needs.</p>
+
+    <section aria-labelledby="membership">
+      <h2 id="membership">Membership Options</h2>
       <ul>
-        <li>Monthly Memberships: Perfect for those who want to try us out.</li>
-        <li>Annual Memberships: Commit to your fitness journey and enjoy exclusive perks.</li>
-        <li>Family & Group Plans: Get fit together and save more.</li>
+        <li>Monthly Memberships</li>
+        <li>Annual Memberships</li>
+        <li>Family &amp; Group Plans</li>
       </ul>
-      <section id="membership-form">
-        Join Limitless Fitness Today!
+
+      <section aria-labelledby="join" id="membership-form">
+        <h3 id="join">Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
-<!--add accessibility to the form-->
-        Full Name
-        Email Address
-        Phone Number
-        Membership Type
-          Select a Membership Option
-          Monthly Membership
-          Annual Membership
-          Family & Group Plans
-        Tell us about your fitness goals:
-        Submit
+
+        <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div>
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel">
+          </div>
+          <div>
+            <label for="type">Membership Type</label>
+            <select id="type" name="membership" required>
+              <option value="">Select a Membership Option</option>
+              <option>Monthly</option>
+              <option>Annual</option>
+              <option>Family &amp; Group</option>
+            </select>
+          </div>
+
+          <fieldset>
+            <legend>Preferred Contact Method</legend>
+            <input id="c-email" name="contact" type="radio" value="email">
+            <label for="c-email">Email</label>
+            <input id="c-phone" name="contact" type="radio" value="phone">
+            <label for="c-phone">Phone</label>
+          </fieldset>
+
+          <div>
+            <label for="goals">Your Fitness Goals</label>
+            <textarea id="goals" name="goals" rows="4"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </section>
   </main>
-  <aside>
-    Testimonials
-    <q>
-      Joining Limitless Fitness has completely transformed my approach to fitness. The supportive community and expert guidance have made all the difference! - Alex R.
-    </q>
-    <q>
-      The variety of classes and top-notch equipment keeps me motivated every single day.- Jamie L.
-    </q>
+
+  <aside aria-labelledby="testimonials">
+    <h2 id="testimonials">Testimonials</h2>
+    <blockquote>
+      <p>“Joining Limitless Fitness has completely transformed my approach to fitness.”</p>
+      <cite>— Alex R.</cite>
+    </blockquote>
+    <blockquote>
+      <p>“The variety of classes and top-notch equipment keeps me motivated every single day.”</p>
+      <cite>— Jamie L.</cite>
+    </blockquote>
   </aside>
+
   <footer>
-    <section>
-      Stay connected
+    <section aria-labelledby="stay-connected">
+      <h2 id="stay-connected">Stay connected</h2>
       <ul>
-        <li>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#007BFF" width="35" height="35">
-            <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z"></path>
-          </svg></li>
-        <li>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="35" height="35" stroke-width="1">
-            <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
-          </svg>
-        </li>
-        <li>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#007BFF" width="35" height="35">
-            <path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z"></path>
-          </svg>
-        </li>
+        <li><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#007BFF" width="35" height="35"><path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z"></path></svg></li>
       </ul>
     </section>
-    <section>
-      Contact Us
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact Us</h2>
       <address>
-        <p>1234 HIIT St. <br>
-        Mesa, AZ 85222 <br>
-        480-432-1234</p>
+        <p>1234 HIIT St.<br>Mesa, AZ 85222<br><a href="tel:+14804321234">480-432-1234</a></p>
       </address>
     </section>
   </footer>
