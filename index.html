@@ -18,12 +18,11 @@
   <meta property="og:title" content="Limitless Fitness Gym">
   <meta property="og:type" content="website">
   <meta property="og:description" content="Expert personal training & group classes. Join Limitless Fitness today.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1554284126-00a33872ed9b?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&h=630&q=80">
   <meta property="og:image:alt" content="Bright modern gym with weight racks and cardio machines">
   <meta property="og:url" content="https://ybaek4.github.io/limitlessfitnessgym/">
   <meta property="og:site_name" content="Limitless Fitness Gym">
   <meta property="og:locale" content="en_US">
-
 
   <!-- ===== Twitter Card (large image) ===== -->
   <meta name="twitter:card" content="summary_large_image">
@@ -31,7 +30,7 @@
   <meta name="twitter:creator" content="@ybaek4">
   <meta name="twitter:title" content="Limitless Fitness Gym">
   <meta name="twitter:description" content="Expert personal training & group classes. Join today.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1554284126-00a33872ed9b?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&h=630&q=80">
   <meta name="twitter:image:alt" content="Bright modern gym with weight racks and cardio machines">
 
   <!-- ===== Favicon ===== -->
@@ -53,6 +52,13 @@
       z-index: 1000;
     }
     svg[aria-hidden="true"] { outline: none; }
+    /* Simple layout polish (optional) */
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; margin: 0; }
+    header, main, footer { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+    header figure, figure { margin: 1rem 0; }
+    nav ul { display: flex; gap: 1rem; list-style: none; padding: 0; }
+    nav a { text-decoration: none; }
+    h1, h2, h3 { line-height: 1.25; }
   </style>
 </head>
 
@@ -60,7 +66,7 @@
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header>
-    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
+    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
       <path d="M2 12h1"></path><path d="M6 8h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2"></path>
       <path d="M6 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1z"></path>
       <path d="M9 12h6"></path>
@@ -73,10 +79,12 @@
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
     <p><a href="#membership-form">Join Now</a></p>
 
-  
-  <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&h=630&q=80" alt="Modern gym interior" width="1200" height="630">
-  <figcaption>Our facility inspires every workout.</figcaption>
-
+    <figure>
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&h=630&q=80"
+           alt="Modern gym interior with weights and cardio equipment under bright lights."
+           width="1200" height="630" loading="lazy" decoding="async">
+      <figcaption>Our facility inspires every workout.</figcaption>
+    </figure>
   </header>
 
   <nav aria-label="Main Navigation">
@@ -117,10 +125,9 @@
       </ul>
 
       <figure>
-        <picture>
-          <source srcset="images/classes-1200.jpg 1200w, images/classes-800.jpg 800w" sizes="(max-width: 600px) 100vw, 1200px">
-          <img src="images/classes.jpg" alt="Instructor leading a group fitness class in bright studio.">
-        </picture>
+        <img src="https://images.unsplash.com/photo-1571019613571-9b39f0b7d6d6?auto=format&fit=crop&w=1200&h=630&q=80"
+             alt="Instructor leading a group fitness class in a bright studio."
+             width="1200" height="630" loading="lazy" decoding="async">
         <figcaption>Find your class and stay consistent.</figcaption>
       </figure>
     </section>
@@ -131,10 +138,9 @@
       <p><a href="#membership-form">Book a Free Consultation today!</a></p>
 
       <figure>
-        <picture>
-          <source srcset="images/dumbells-1200.jpg 1200w, images/dumbells-800.jpg 800w" sizes="(max-width: 600px) 100vw, 1200px">
-          <img src="images/dumbells.jpg" alt="Trainer coaching client during dumbbell workout.">
-        </picture>
+        <img src="https://images.unsplash.com/photo-1579758629936-0450e74518d7?auto=format&fit=crop&w=1200&h=630&q=80"
+             alt="Personal trainer coaching a client during a strength workout."
+             width="1200" height="630" loading="lazy" decoding="async">
         <figcaption>Guided sessions for real progress.</figcaption>
       </figure>
     </section>
@@ -205,28 +211,29 @@
   </aside>
 
   <footer>
-  <section aria-labelledby="stay-connected">
-    <h2 id="stay-connected">Stay connected</h2>
-    <ul>
-      <li>
-        <svg aria-hidden="true" focusable="false"
-             xmlns="http://www.w3.org/2000/svg"
-             viewBox="0 0 24 24" fill="#007BFF" width="35" height="35">
-          <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z"></path>
-        </svg>
-      </li>
-    </ul>
-  </section>
+    <section aria-labelledby="stay-connected">
+      <h2 id="stay-connected">Stay connected</h2>
+      <ul>
+        <li>
+          <svg aria-hidden="true" focusable="false"
+               xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24" fill="#007BFF" width="35" height="35">
+            <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z"></path>
+          </svg>
+        </li>
+      </ul>
+    </section>
 
-  <section aria-labelledby="contact">
-    <h2 id="contact">Contact Us</h2>
-    <address>
-      <p>
-        1234 HIIT St.<br>
-        Mesa, AZ 85222<br>
-        <a href="tel:+14804321234">480-432-1234</a>
-      </p>
-    </address>
-  </section>
-</footer>
-
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact Us</h2>
+      <address>
+        <p>
+          1234 HIIT St.<br>
+          Mesa, AZ 85222<br>
+          <a href="tel:+14804321234">480-432-1234</a>
+        </p>
+      </address>
+    </section>
+  </footer>
+</body>
+</html>
